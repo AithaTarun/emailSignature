@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./Libraries/bootstrap-5.0.0-beta1-dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="./Libraries/bootstrap-5.0.0-beta1-dist/ajax/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="./Libraries/bootstrap-5.0.0-beta1-dist/js/bootstrap.min.js"></script>
+
+    <style>
+        .vl
+        {
+            border-left: 6px solid #fb6303;
+            height: 126px;
+            margin-left: -65px;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="container" style="margin-top: 5px">
+    <div class="row">
+        <div class="col col-lg-2">
+            <img src="./Icons/Profile.png" style="width: 120px ; height: 120px">
+        </div>
+
+        <div class="col col-lg-1 vl">
+        </div>
+
+        <div class="col col-lg-4" style="margin-left: -90px">
+            <p id="name_text" class="fw-bold" style="color: #fb6303"></p>
+
+            <a id="mail" class="fw-bold" style="text-decoration: None">
+                <img src="./Icons/Gmail.png" style="width: 20px ; height: 20px" class="d-inline">
+                <span id="mail_text" style="margin-left: 5px"></span>
+            </a>
+
+            <p class="fw-bold" style="color: #fb6303 ; margin-top: 3px">
+                <img src="./Icons/Phone.png" style="width: 20px ; height: 20px" class="d-inline">
+                <span id="phone_text" style="margin-left: 5px"></span>
+            </p>
+
+            <div class="row">
+                <div class="col col-1">
+                    <a id="linkedin">
+                        <img src="./Icons/Linkedin.png" style="width: 20px ; height: 20px">
+                    </a>
+                </div>
+
+                <div class="col col-1">
+                    <a id="github">
+                        <img src="./Icons/Github.png" style="width: 20px ; height: 20px">
+                    </a>
+                </div>
+
+                <div class="col col-1">
+                    <a id="discord">
+                        <img src="./Icons/Discord.png" style="width: 20px ; height: 20px">
+                    </a>
+                </div>
+
+                <div class="col col-1">
+                    <a id="vk">
+                        <img src="./Icons/VK.png" style="width: 20px ; height: 20px">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script>
+    name = "Tarun Aitha"
+    document.querySelector("#name_text").textContent = name
+
+    mailId = "aitha.tarun@gmail.com"
+    document.querySelector("#mail").href = `mailto:${mailId}`
+    document.querySelector("#mail_text").textContent = mailId
+
+    phone = "7095464277"
+    document.querySelector("#phone_text").textContent = phone
+
+    linkedin = "https://www.linkedin.com/in/aitha-tarun-a30438175"
+    document.querySelector("#linkedin").href = linkedin
+
+    github = "https://github.com/AithaTarun"
+    document.querySelector("#github").href = github
+
+    discord = "https://discordapp.com/users/778824975246163990"
+    document.querySelector("#discord").href = discord
+
+    vk = "https://vk.com/id575933620"
+    document.querySelector("#vk").href = vk
+</script>
+
+</body>
+
+</html>
